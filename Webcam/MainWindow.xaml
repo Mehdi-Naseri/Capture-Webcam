@@ -1,0 +1,14 @@
+﻿<Window x:Class="Webcam.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:wf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
+        Title="Webcam" Height="394" Width="721" Loaded="Window_Loaded">
+    <Grid Name="Grid1">
+        <Button Content="Start" Height="23" HorizontalAlignment="Left" Margin="225,320,0,0" Name="button1" VerticalAlignment="Top" Width="58" Click="button1_Click" />
+        <ComboBox Height="23" HorizontalAlignment="Left" Margin="12,320,0,0" Name="comboBox1" VerticalAlignment="Top" Width="207" SelectionChanged="comboBox1_SelectionChanged" />
+        <WindowsFormsHost Height="300" HorizontalAlignment="Left" Margin="12,12,0,0" Name="windowsFormsHost1" VerticalAlignment="Top" Width="677" >
+            <wf:PictureBox Name="pictureBox1"/>
+        </WindowsFormsHost>
+        <Button Content="Stop" Height="23" HorizontalAlignment="Left" Margin="289,320,0,0" Name="button2" VerticalAlignment="Top" Width="57" Click="button2_Click" />
+    </Grid>
+</Window>
